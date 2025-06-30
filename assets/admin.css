@@ -1,0 +1,494 @@
+/* WP Advanced Scraper Pro Admin Styles */
+
+.wasp-dashboard {
+  margin-top: 20px;
+}
+
+.wasp-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.wasp-stat-card {
+  background: #fff;
+  border: 1px solid #ccd0d4;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.wasp-stat-number {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #0073aa;
+  margin-bottom: 5px;
+}
+
+.wasp-stat-label {
+  color: #666;
+  font-size: 14px;
+}
+
+.wasp-recent-activity,
+.wasp-quick-actions {
+  background: #fff;
+  border: 1px solid #ccd0d4;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.wasp-activity-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.wasp-activity-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.wasp-activity-item:last-child {
+  border-bottom: none;
+}
+
+.wasp-activity-time {
+  flex: 0 0 150px;
+  font-size: 12px;
+  color: #666;
+}
+
+.wasp-activity-task {
+  flex: 0 0 120px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.wasp-activity-message {
+  flex: 1;
+  font-size: 13px;
+}
+
+.wasp-log-info .wasp-activity-task {
+  color: #0073aa;
+}
+
+.wasp-log-success .wasp-activity-task {
+  color: #46b450;
+}
+
+.wasp-log-warning .wasp-activity-task {
+  color: #ffb900;
+}
+
+.wasp-log-error .wasp-activity-task {
+  color: #d63638;
+}
+
+.wasp-action-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Tasks Page */
+.wasp-tasks-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.wasp-task-form,
+.wasp-tasks-list {
+  background: #fff;
+  border: 1px solid #ccd0d4;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.wasp-type-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+}
+
+.wasp-type-sitemap {
+  background: #46b450;
+}
+
+.wasp-type-rss {
+  background: #d63638;
+}
+
+.wasp-type-html {
+  background: #0073aa;
+}
+
+.wasp-status-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.wasp-status-active {
+  background: #46b450;
+  color: white;
+}
+
+.wasp-status-inactive {
+  background: #d63638;
+  color: white;
+}
+
+.wasp-status-pending {
+  background: #ffb900;
+  color: white;
+}
+
+.wasp-status-published {
+  background: #46b450;
+  color: white;
+}
+
+.wasp-status-failed {
+  background: #d63638;
+  color: white;
+}
+
+.wasp-actions {
+  white-space: nowrap;
+}
+
+.wasp-actions .button {
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+/* Results Page */
+.wasp-results-container {
+  margin-top: 20px;
+}
+
+.wasp-filters {
+  background: #fff;
+  border: 1px solid #ccd0d4;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.wasp-bulk-actions,
+.wasp-filter-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Logs Page */
+.wasp-logs-container {
+  margin-top: 20px;
+}
+
+.wasp-log-filters {
+  background: #fff;
+  border: 1px solid #ccd0d4;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wasp-log-level {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+}
+
+.wasp-log-level-info {
+  background: #0073aa;
+}
+
+.wasp-log-level-success {
+  background: #46b450;
+}
+
+.wasp-log-level-warning {
+  background: #ffb900;
+}
+
+.wasp-log-level-error {
+  background: #d63638;
+}
+
+.wasp-log-row.wasp-log-error {
+  background-color: #ffeaea;
+}
+
+.wasp-log-row.wasp-log-warning {
+  background-color: #fff8e1;
+}
+
+.wasp-log-row.wasp-log-success {
+  background-color: #eafaf1;
+}
+
+/* Modal Styles */
+.wasp-modal {
+  position: fixed;
+  z-index: 100000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wasp-modal-content {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow: hidden;
+}
+
+.wasp-modal-large {
+  max-width: 800px;
+}
+
+.wasp-modal-header {
+  padding: 15px 20px;
+  background: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wasp-modal-header h3 {
+  margin: 0;
+  color: #23282d;
+}
+
+.wasp-modal-close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.wasp-modal-close:hover {
+  color: #000;
+}
+
+.wasp-modal-body {
+  padding: 20px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+/* Progress Bar */
+.wasp-progress-bar {
+  width: 100%;
+  height: 24px;
+  background-color: #f1f1f1;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 15px 0;
+  border: 1px solid #ddd;
+}
+
+.wasp-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0073aa, #005a87);
+  transition: width 0.3s ease;
+  border-radius: 12px;
+}
+
+.wasp-progress-text {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #23282d;
+}
+
+.wasp-progress-details {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Content Details */
+#wasp-content-details h4 {
+  color: #23282d;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+#wasp-content-details .wasp-content-preview {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 4px;
+  border-left: 4px solid #0073aa;
+  margin: 10px 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#wasp-content-details .wasp-meta-info {
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Button States */
+.button.wasp-loading {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button.wasp-start-task {
+  background: #46b450;
+  border-color: #46b450;
+  color: white;
+}
+
+.button.wasp-start-task:hover {
+  background: #3ba347;
+  border-color: #3ba347;
+}
+
+.button.wasp-create-post {
+  background: #0073aa;
+  border-color: #0073aa;
+  color: white;
+}
+
+.button.wasp-create-post:hover {
+  background: #005a87;
+  border-color: #005a87;
+}
+
+.button.wasp-delete-task,
+.button.wasp-delete-result {
+  background: #d63638;
+  border-color: #d63638;
+  color: white;
+}
+
+.button.wasp-delete-task:hover,
+.button.wasp-delete-result:hover {
+  background: #b32d2e;
+  border-color: #b32d2e;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .wasp-tasks-container {
+    grid-template-columns: 1fr;
+  }
+
+  .wasp-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .wasp-bulk-actions,
+  .wasp-filter-controls {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .wasp-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wasp-modal-content {
+    width: 95%;
+    margin: 10px;
+  }
+
+  .wasp-actions .button {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .wasp-action-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Form Improvements */
+.form-table th {
+  width: 200px;
+  vertical-align: top;
+  padding-top: 15px;
+}
+
+.form-table td {
+  vertical-align: top;
+}
+
+.form-table textarea {
+  font-family: Consolas, Monaco, monospace;
+  font-size: 13px;
+}
+
+.form-table .description {
+  font-style: italic;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Animation */
+@keyframes wasp-pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.wasp-loading {
+  animation: wasp-pulse 1.5s infinite;
+}
